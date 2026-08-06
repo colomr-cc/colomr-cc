@@ -6,8 +6,8 @@
 ---
 
 ### 🚀 Mis Proyectos Destacados
-* **[colomr-v1-theme](https://github.com/colomr-cc/colomr-v1-theme)** - Template para Hugo diseñado completamente desde cero con Google Stitch 2.
-* **[claude-config](https://github.com/colomr-cc/claude-config)** - configuración global de claude code: contrato de trabajo, política compartida y orquestador de sincronización
+* [colomr-v1-theme](https://github.com/colomr-cc/colomr-v1-theme) - Template para Hugo diseñado completamente desde cero con Google Stitch 2.
+* [claude-config](https://github.com/colomr-cc/claude-config) - Configuración multi-dispositivo global de Claude Code: contrato de trabajo, política compartida y orquestador de sincronización
 
 ### ✍️ Mis Últimas Publicaciones Técnicas
 <!-- START_BLOG_POST_LIST -->
