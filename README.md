@@ -20,4 +20,4 @@
 * **Website** [Sobre mí](https://colomr.cc/)
 * **Google Developers** [Public Profile](https://g.dev/colomr)
 * **Google Skills** [Public Profile](https://www.skills.google/public_profiles/36fdb0e1-891c-4dc5-aef1-d89aecc3dd45)
-* **LinkedIn:** [Francisco Colomer | LinkedIn](https://linkedin.com)
+* **LinkedIn:** [Francisco Colomer | LinkedIn](https://www.linkedin.com/in/colomr)
