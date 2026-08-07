@@ -1,23 +1,25 @@
-# ¡Hola! 👋
+# Hello World 👋
 
-* De día ⛅ diseño arquitecturas de Google Cloud para grandes cuentas: RFPs, demos técnicas, ciclos de venta complejos… Aquí aprendo cómo piensa una organización grande cuando tiene miedo de equivocarse.
-* En mi tiempo libre 🌙 construyo “cosas” que ahora van solas 🤖. Encargarme de todas las fases en mis side-projects me da una visión 360º que ningún curso te enseña: idea, prototipado, arquitectura, código, calidad, despliegue, mantenimiento, etc.
+> **Spanish version:** [README_ES.md](README_ES.md)
+
+* By day ⛅ I design Google Cloud architectures for large accounts: RFPs, technical demos, complex sales cycles… Here I learn how large organizations think when they're afraid to make mistakes.
+* In my free time 🌙 I build "things" that now run themselves 🤖. Handling all phases of my side-projects gives me a 360º perspective that no course teaches: idea, prototyping, architecture, code, quality, deployment, maintenance, etc.
 
 ---
 
-### 🚀 Mis Proyectos Destacados
-* [colomr-v1-theme](https://github.com/colomr-cc/colomr-v1-theme) - Template para Hugo diseñado completamente desde cero con Google Stitch 2.
-* [claude-config](https://github.com/colomr-cc/claude-config) - Configuración multi-dispositivo global de Claude Code: contrato de trabajo, política compartida y orquestador de sincronización
+### 🚀 Featured Projects
+* [colomr-v1-theme](https://github.com/colomr-cc/colomr-v1-theme) - Hugo theme designed from scratch with Google Stitch 2.
+* [claude-config](https://github.com/colomr-cc/claude-config) - Multi-device global Claude Code configuration: work contract, shared policy, and sync orchestrator
 
-### ✍️ Mis Últimas Publicaciones Técnicas
+### ✍️ My Latest Technical Posts
 <!-- START_BLOG_POST_LIST -->
-*Aún no hay publicaciones. ¡Pronto aparecerán aquí mis artículos de Hashnode de forma automática!*
+*No posts yet. Soon my Hashnode articles will appear here automatically!*
 <!-- END_BLOG_POST_LIST -->
 
 ---
 
-### 📬 ¿Hablamos?
-* **Website** [Sobre mí](https://colomr.cc/)
+### 📬 Let's Talk?
+* **Website** [About me](https://colomr.cc/)
 * **Google Developers** [Public Profile](https://g.dev/colomr)
 * **Google Skills** [Public Profile](https://www.skills.google/public_profiles/36fdb0e1-891c-4dc5-aef1-d89aecc3dd45)
 * **Dev** [Francisco Colomer | DEV](https://dev.to/colomr)
