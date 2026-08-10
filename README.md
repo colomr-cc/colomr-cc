@@ -13,7 +13,8 @@
 
 ### ✍️ My Latest Technical Posts
 <!-- START_BLOG_POST_LIST -->
-*No posts yet. Soon my Hashnode articles will appear here automatically!*
+- [Multi-Device with Claude Code](https://dev.to/colomr/multi-device-with-claude-code-179l)
+- [Hello World! Launching my technical blog 🚀](https://dev.to/colomr/hello-world-launching-my-technical-blog-1nam)
 <!-- END_BLOG_POST_LIST -->
 
 ---
