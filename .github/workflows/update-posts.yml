@@ -1,6 +1,6 @@
 name: Update README with Latest Posts
 
-on:
+"on":
   # Monthly automated update on the 1st of each month at 00:00 UTC
   schedule:
     - cron: '0 0 1 * *'
