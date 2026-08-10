@@ -1,6 +1,5 @@
 """Unit tests for update_posts module."""
 
-import json
 import tempfile
 from pathlib import Path
 from unittest.mock import MagicMock, patch
@@ -62,7 +61,7 @@ class TestFetchUserPosts:
         mock_response.json.return_value = mock_posts
         mock_get.return_value = mock_response
 
-        posts = fetch_user_posts("colomr", api_key="test-key-123")
+        fetch_user_posts("colomr", api_key="test-key-123")
 
         call_kwargs = mock_get.call_args[1]
         assert call_kwargs["headers"]["api-key"] == "test-key-123"
