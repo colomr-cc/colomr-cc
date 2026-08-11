@@ -37,7 +37,7 @@ jobs:
           args: >
             -Dsonar.projectKey=colomr-cc_colomr-cc
             -Dsonar.organization=colomr
-            -Dsonar.sources=scripts,tests
+            -Dsonar.sources=scripts
             -Dsonar.tests=tests
             -Dsonar.python.version=3.11
             -Dsonar.python.coverage.reportPaths=coverage.xml
