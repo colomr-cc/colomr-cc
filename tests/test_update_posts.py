@@ -5,6 +5,7 @@ from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 import pytest
+import requests
 
 from scripts.update_posts import (
     fetch_user_posts,
@@ -80,9 +81,9 @@ class TestFetchUserPosts:
     @patch("scripts.update_posts.requests.get")
     def test_fetch_user_posts_api_error(self, mock_get):
         """Test fetch handles API errors."""
-        mock_get.side_effect = Exception("API Error")
+        mock_get.side_effect = requests.RequestException("API Error")
 
-        with pytest.raises(Exception):
+        with pytest.raises(requests.RequestException):
             fetch_user_posts("colomr")
 
 

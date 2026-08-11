@@ -1,3 +1,6 @@
-pytest==7.4.3
-pytest-cov==4.1.0
-ruff==0.2.2
+pytest==7.4.3 \
+    --hash=sha256:0d009c083ea859a71b76adf7c1d502e4bc170b80a8ef002da5806527b9591fac
+pytest-cov==4.1.0 \
+    --hash=sha256:6ba70b9e97e69fcc3fb45bfeab2d0a138fb65c4d0d6a41ef33983ad114be8c3a
+ruff==0.2.2 \
+    --hash=sha256:0a9efb032855ffb3c21f6405751d5e147b0c6b631e3ca3f6b20f917572b97eb6
