@@ -23,7 +23,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: "pip install --require-hashes --only-binary :all: -r requirements-all.txt"
+        run: "pip install --only-binary :all: -r requirements-all.txt"
 
       - name: Lint
         run: ruff check scripts/ tests/
