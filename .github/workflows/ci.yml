@@ -1,0 +1,57 @@
+name: CI
+
+"on":
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: "pip install --require-hashes --only-binary :all: -r requirements.txt"
+
+      - name: Install dev dependencies
+        run: "pip install --require-hashes --only-binary :all: -r requirements-dev.txt"
+
+      - name: Lint
+        run: ruff check scripts/ tests/
+
+      - name: Run tests
+        run: pytest tests/ -v --cov=scripts --cov-report=xml --cov-fail-under=70
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        with:
+          args: >
+            -Dsonar.projectKey=colomr-cc_colomr-cc
+            -Dsonar.organization=colomr
+            -Dsonar.sources=scripts,tests
+            -Dsonar.tests=tests
+            -Dsonar.python.version=3.11
+            -Dsonar.python.coverage.reportPaths=coverage.xml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+      - name: Check Quality Gate
+        uses: SonarSource/sonarcloud-github-action@master
+        with:
+          args: -Dsonar.qualitygate.wait=true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
