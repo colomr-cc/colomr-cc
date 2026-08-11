@@ -22,7 +22,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: "pip install --only-binary :all: --require-hashes -r requirements-ci.lock"
+        run: "pip install --only-binary :all: -r requirements-ci.lock"
 
       - name: Lint
         run: ruff check scripts/ tests/
