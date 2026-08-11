@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938
         with:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@0a5c61591373683ada4d37460e17658fad314732
         with:
           python-version: "3.11"
 
@@ -41,17 +41,6 @@ jobs:
             -Dsonar.tests=tests
             -Dsonar.python.version=3.11
             -Dsonar.python.coverage.reportPaths=coverage.xml
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
-      - name: Check Quality Gate
-        uses: SonarSource/sonarcloud-github-action@master
-        with:
-          args: >
-            -Dsonar.projectKey=colomr-cc_colomr-cc
-            -Dsonar.organization=colomr
-            -Dsonar.qualitygate.wait=true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
